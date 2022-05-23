@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact 444</title>
+    <link rel="stylesheet" href="../css/cont.css" />
+    <style>
+        p {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        
+        .password {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 1px;
+            resize: vertical;
+            box-shadow: 0 0 5px 5px rgba(68, 66, 66, 0.5);
+            margin-left: 5px;
+        }
+        
+        .contact-text {
+            text-align: justify;
+            font-weight: lighter;
+            font-size: large;
+            margin-left: 500px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 550px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- initiate the main container div for page-->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../images/logo.png" width="120px" class="logo" />
+            </div>
+            <nav>
+                <!-- navigation bar for webpage-->
+
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/product.html">Book</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="../pages/research.html">Research</a></li>
+                    <li><a href="../pages/cont.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- ending nav bar -->
+        </div>
+        <!-- eding main container div-->
+
+
+        <h2 style="margin-left: 240px;"> Please get in touch with us and our technical support team and experts will answer all your questions.</h2>
+        <h4 class="contact-text">
+            Email us with any question or inquiries or call 9823146619.
+            <br>We would be happy to answer your questions and please fell<br> free to drop your questions.We will consider it as soon as possible. <br>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THANK YOU FOR YOUR TIME. </h4>
+
+        <div> <img src="../images/g1.png" width="800px" height="500px" style="margin-left: -120px;margin-bottom:-580px;" class="girl"> </div>
+        <div class="form-design">
+            <!-- main container for form div is inialized 😎😎 -->
+            <!-- <p class="form-text">
+
+                Hello Everyone This Is the login page as well as the contact form for my<br> website you can login and get connected to Us and our webste<br>
+
+            
+            </p> -->
+
+            <h2 style="margin-left: 200px;" class="cont-text"> Contact Us</h2>
+
+
+            <form name="check" onsubmit="validation()">
+                <div class="small">
+                    <div class="row">
+                        <p> First Name : <input type="text" name="fname" placeholder="Enter your first name"></p>
+                    </div>
+
+                    <div class="row">
+                        <p>Last Name:&nbsp; <input type="text" name="lname" placeholder="Enter your last name"></p>
+                    </div>
+                    <div class="row">
+                        <p>E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="Email" placeholder="rupesharma@gmail.com"></p>
+                    </div>
+
+
+
+                    <div class="row">
+                        <p>
+                            Gender:
+                            <select id="gender" name="gender" style="margin-left: 25px;">
+                                <option value="Female ">Female</option>
+                                <option value="Male">Male</option>
+                                <option value="Other ">Other</option>
+                                <option value="Ranther Not Mention">Ranther Not Mention</option>
+                                </select>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p style="margin-top:-10px">Message :</p>
+
+                        <textarea name="message" rows="5" cols="20" placeholder="Enter your message here..." style="margin-left: 90px;"></textarea>
+
+
+                        <p><input type="submit" name="login" value="Submit" class="sub"></p>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- main container for form div is ended 😎😎 -->
+
+
+        <!-- inernal java script -->
+
+        <script type="text/javascript">
+            function validation() {
+
+                // create local variable name 
+                var first_name = document.forms["check"]["fname"].value;
+                var fender = document.forms["check"]["gender"].value;
+                var last_name = document.forms["check"]["lname"].value;
+                var message = document.forms["check"]["message"].value;
+                var email = document.forms["check"]["Email"].value;
+
+                // if condition for the form validation
+                if (first_name == "") {
+                    alert("Enter first name")
+                } else if (last_name == null && first_name == null) {
+                    alert("All field are required")
+                } else if (message == 0) {
+                    alert("Please write a message")
+
+                } else if (email == 0) {
+                    alert("Please enter your E-mail")
+
+                } else if (last_name == 0) {
+                    alert("Enter Your Last Name")
+
+                } else {
+                    alert("Thanks for your form submittion")
+                }
+            }
+        </script>
+
+        <!------------ creating a footer section ----------------------->
+
+        <div class="main-wrap">
+            <!--start main-wrap div😎😎 -->
+
+            <div class="footer-wrap">
+                <!--start main-wrap div 😎😎-->
+                <div class="footer-wrap-1">
+
+                    <div class="footer-section">
+                        <!--start main-wrap div😎😎-->
+                        <h1>About</h1>
+                        <hr width="60px">
+                        <a href="#">Services</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">careers</a>
+
+                    </div>
+                    <!--close footer-section div👌👌-->
+                    <div class="footer-section">
+                        <!--start main-wrap div😎😎-->
+                        <h1>Resources</h1>
+
+                        <hr width="96px">
+                        <a href="#">Docs</a>
+                        <a href="#">e-book</a>
+                        <a href="#">Audio-book</a>
+
+                    </div>
+                    <!--close footer-section div👌👌-->
+
+                    <div class="footer-section">
+                        <!--start footer-section div😎😎-->
+                        <h1>Contacts</h1>
+                        <hr width="85px">
+                        <a href="#">Help</a>
+                        <a href="#">contact</a>
+                        <a href="#">Technical suppeort</a>
+
+
+                    </div>
+                    <!--close footer-section div👌👌-->
+
+
+                </div>
+                <!--close footer-wrap-1 div-->
+
+                <div class="footer-wrap-2">
+                    <div class="line"></div>
+                    <div class="social-link">
+                        <a href="https://www.facebook.com/">
+                            <img src="../images/fb.png">
+                        </a>
+
+                        <a href="https://www.instagram.com/rupesharma1335/">
+                            <img src="../images/in.png">
+                        </a>
+
+                        <a href="https://twitter.com/">
+                            <img src="../images/tw.png">
+                        </a>
+
+                        <a href="https://www.linkedin.com/learning/?u=57118729">
+                            <img src="../images/link.png">
+
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                            <img src="../images/gmail.png">
+
+                        </a>
+                    </div>
+
+                </div>
+                <!--social link div closing-->
+
+                <center> <a href=" # ">&copy; Copyright 2022 Rupesh Sharma</a><br>
+
+                    <a href="# ">Terms & conditions</a><br>
+                    <a href="# ">Privacy Policy</a><br>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!--close footer-wrap div 👌👌-->
+    </div>
+    <!--close main-wrap div 👌👌-->
+
+
+</body>
+
+</html>
